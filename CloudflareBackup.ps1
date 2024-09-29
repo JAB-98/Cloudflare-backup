@@ -41,4 +41,5 @@ foreach ($currentItemName in $Domains) {
     } while ($ZoneTeamp.result_info.page -lt $ZoneTeamp.result_info.total_pages)
     Write-Host "$($currentItemName.name) Has exported to zone file" -ForegroundColor Green
     $zone | Select-Object name, type, content | ConvertTo-Csv -Delimiter `t -UseQuotes Never -NoHeader | Set-Content -Path "zones\$($currentItemName.name).zone"
+    $zone | ConvertTo-Json| Set-Content -Path "zones\$($currentItemName.name).json"
 }
