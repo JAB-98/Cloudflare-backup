@@ -14,8 +14,9 @@ if ($null -eq $Authorization) {
 if ("zones" -notin (Get-ChildItem).name) {
     mkdir zones
 }
+    $i=1
 do {
-    $DomainsTemp = Invoke-webrequest -Uri "$($baceurl)zones" -Method Get -Headers @{"Authorization" = $Authorization } | ConvertFrom-Json
+    $DomainsTemp = Invoke-webrequest -Uri "$($baceurl)zones?page=$($i)" -Method Get -Headers @{"Authorization" = $Authorization } | ConvertFrom-Json
     if ($null -eq $Domains) {
         $Domains = $DomainsTemp.result
     }
@@ -24,11 +25,12 @@ do {
             $Domains += $currentItemName
         }
     }
-    
+    $i++
 } while ($DomainsTemp.result_info.page -lt $DomainsTemp.result_info.total_pages)
 foreach ($currentItemName in $Domains) {
+    $i=1
     do {
-        $ZoneTeamp = Invoke-webrequest -Uri "$($baceurl)zones/$($currentItemName.id)/dns_records" -Method Get -Headers @{"Authorization" = $Authorization } | ConvertFrom-Json
+        $ZoneTeamp = Invoke-webrequest -Uri "$($baceurl)zones/$($currentItemName.id)/dns_records?page=$($i)" -Method Get -Headers @{"Authorization" = $Authorization } | ConvertFrom-Json
         if ($null -eq $Zone) {
             $Zone = $ZoneTeamp.result
         }
@@ -37,7 +39,7 @@ foreach ($currentItemName in $Domains) {
                 $Zone += $_
             }
         }
-        
+        $i++
     } while ($ZoneTeamp.result_info.page -lt $ZoneTeamp.result_info.total_pages)
     Write-Host "$($currentItemName.name) Has exported to zone file" -ForegroundColor Green
     $zone | Select-Object name, type, content | ConvertTo-Csv -Delimiter `t -UseQuotes Never -NoHeader | Set-Content -Path "zones\$($currentItemName.name).zone"
