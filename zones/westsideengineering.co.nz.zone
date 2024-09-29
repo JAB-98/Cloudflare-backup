@@ -1,0 +1,110 @@
+api.arcnet.nz	CNAME	host.arcnet.nz
+arcnet.nz	CNAME	1.host.servernet.nz
+auth.arcnet.nz	CNAME	host.arcnet.nz
+autodiscover.arcnet.nz	CNAME	autodiscover.outlook.com
+dash.aa123.arcnet.nz	CNAME	aa123.arcnet.nz
+*.dev.arcnet.nz	CNAME	host.arcnet.nz
+docker.arcnet.nz	CNAME	host.arcnet.nz
+em315318.arcnet.nz	CNAME	return.smtp2go.net
+enterpriseenrollment.arcnet.nz	CNAME	enterpriseenrollment.manage.microsoft.com
+enterpriseregistration.arcnet.nz	CNAME	enterpriseregistration.windows.net
+*.host.arcnet.nz	CNAME	host.arcnet.nz
+host.arcnet.nz	CNAME	1.host.servernet.nz
+hosts.arcnet.nz	CNAME	host2.arcnet.nz
+invoice.arcnet.nz	CNAME	arcnet.nz
+link.arcnet.nz	CNAME	track.smtp2go.net
+lyncdiscover.arcnet.nz	CNAME	webdir.online.lync.com
+npm.host.arcnet.nz	CNAME	host.arcnet.nz
+portainer.host.arcnet.nz	CNAME	host.arcnet.nz
+push.arcnet.nz	CNAME	arcnet.nz
+remotely.arcnet.nz	CNAME	arcnet.nz
+s315318._domainkey.arcnet.nz	CNAME	dkim.smtp2go.net
+sc.arcnet.nz	CNAME	host.arcnet.nz
+selector1._domainkey.arcnet.nz	CNAME	selector1-arcnet-nz._domainkey.jamiesservers.onmicrosoft.com
+selector2._domainkey.arcnet.nz	CNAME	selector2-arcnet-nz._domainkey.jamiesservers.onmicrosoft.com
+sip.arcnet.nz	CNAME	sipdir.online.lync.com
+uptime.arcnet.nz	CNAME	host.arcnet.nz
+wazuh.arcnet.nz	CNAME	host.arcnet.nz
+www.arcnet.nz	CNAME	arcnet.nz
+arcnet.nz	MX	arcnet-nz.mail.protection.outlook.com
+_sipfederationtls._tcp.arcnet.nz	SRV	100 5061 sipfed.online.lync.com
+_sip._tls.arcnet.nz	SRV	100 443 sipdir.online.lync.com
+arcnet.nz	TXT	"v=spf1 a:arcnet.nz include:spf.protection.outlook.com include:spf.smtp2go.com -all"
+_dmarc.arcnet.nz	TXT	"v=DMARC1; p=reject; rua=mailto:fcb78213904544ceabd5456f59630655@dmarc-reports.cloudflare.net,mailto:spam@arcnet.nz; ruf=mailto:spam@arcnet.nz; sp=reject; fo=0:1:d:s; pct=100; ri=86400; adkim=s; aspf=s"
+jamiesservers.com	A	170.64.146.110
+autodiscover.jamiesservers.com	CNAME	autodiscover.outlook.com
+enterpriseenrollment.jamiesservers.com	CNAME	enterpriseenrollment-s.manage.microsoft.com
+enterpriseregistration.jamiesservers.com	CNAME	enterpriseregistration.windows.net
+lyncdiscover.jamiesservers.com	CNAME	webdir.online.lync.com
+selector1._domainkey.jamiesservers.com	CNAME	selector1-jamiesservers-com._domainkey.jamiesservers.onmicrosoft.com
+selector2._domainkey.jamiesservers.com	CNAME	selector2-jamiesservers-com._domainkey.jamiesservers.onmicrosoft.com
+sip.jamiesservers.com	CNAME	sipdir.online.lync.com
+jamiesservers.com	MX	jamiesservers-com.mail.protection.outlook.com
+_sipfederationtls._tcp.jamiesservers.com	SRV	1 5061 sipfed.online.lync.com
+_sip._tls.jamiesservers.com	SRV	1 443 sipdir.online.lync.com
+_dmarc.jamiesservers.com	TXT	v=DMARC1; p=reject; rua=mailto:spam@jamiesservers.com; ruf=mailto:spam@jamiesservers.com; sp=reject; fo=0:1:d:s; pct=100; ri=86400; adkim=s; aspf=s
+jamiesservers.com	TXT	"v=spf1 include:spf.protection.outlook.com -all"
+rnhc.co.nz	A	170.64.146.110
+em315318.rnhc.co.nz	CNAME	return.smtp2go.net
+enterpriseenrollment.rnhc.co.nz	CNAME	enterpriseenrollment-s.manage.microsoft.com
+enterpriseregistration.rnhc.co.nz	CNAME	enterpriseregistration.windows.net
+link.rnhc.co.nz	CNAME	track.smtp2go.net
+s315318._domainkey.rnhc.co.nz	CNAME	dkim.smtp2go.net
+selector1._domainkey.rnhc.co.nz	CNAME	selector1-rnhc-co-nz._domainkey.rnhcnz.onmicrosoft.com
+selector2._domainkey.rnhc.co.nz	CNAME	selector2-rnhc-co-nz._domainkey.rnhcnz.onmicrosoft.com
+www.rnhc.co.nz	CNAME	rnhc.co.nz
+rnhc.co.nz	MX	rnhc-co-nz.mail.protection.outlook.com
+_dmarc.rnhc.co.nz	TXT	"v=DMARC1;  p=none; rua=mailto:d95f24a88a1c480ebfd6f38b2a8c4d8a@dmarc-reports.cloudflare.net"
+rnhc.co.nz	TXT	"v=spf1 include:spf.protection.outlook.com -all"
+rnhc.co.nz	TXT	MS=ms43825722
+rnhc.co.nz	TXT	"MS=ms63469216"
+1.host.servernet.nz	A	170.64.146.110
+1.host.servernet.nz	AAAA	2400:6180:10:200::8:4000
+1.host.servernet.nz	CAA	0 issuewild "letsencrypt.org"
+1.host.servernet.nz	CAA	0 iodef " mailto:spam@servernet.nz"
+1.host.servernet.nz	CAA	0 issue "letsencrypt.org"
+auth.servernet.nz	CNAME	1.host.servernet.nz
+autodiscover.servernet.nz	CNAME	autodiscover.outlook.com
+dmarc.servernet.nz	CNAME	1.host.servernet.nz
+enterpriseenrollment.servernet.nz	CNAME	enterpriseenrollment-s.manage.microsoft.com
+enterpriseregistration.servernet.nz	CNAME	enterpriseregistration.windows.net
+lyncdiscover.servernet.nz	CNAME	webdir.online.lync.com
+macos.webhost.servernet.nz	CNAME	1.host.servernet.nz
+mx.dmarc.servernet.nz	CNAME	1.host.servernet.nz
+selector1._domainkey.servernet.nz	CNAME	selector1-servernet-nz._domainkey.jamiesservers.onmicrosoft.com
+selector2._domainkey.servernet.nz	CNAME	selector2-servernet-nz._domainkey.jamiesservers.onmicrosoft.com
+sip.servernet.nz	CNAME	sipdir.online.lync.com
+*.soc.servernet.nz	CNAME	1.host.servernet.nz
+*.teleport.servernet.nz	CNAME	1.host.servernet.nz
+teleport.servernet.nz	CNAME	1.host.servernet.nz
+xuba.dmarc.servernet.nz	CNAME	1.host.servernet.nz
+*.xuba.servernet.nz	CNAME	1.host.servernet.nz
+dmarc.servernet.nz	MX	dmarc-servernet-nz.mail.protection.outlook.com
+servernet.nz	MX	servernet-nz.mail.protection.outlook.com
+_sipfederationtls._tcp.servernet.nz	SRV	1 5061 sipfed.online.lync.com
+_sip._tls.servernet.nz	SRV	1 443 sipdir.online.lync.com
+1.host.servernet.nz	SSHFP	2 2 C671C8B35623345A81B4121736F8C681417630A587E77F222E0D2B9C24EBCD66
+1.host.servernet.nz	SSHFP	4 2 06D74EF0B55D6DF43D3D3492684ED00DF1E48F43589E2D1DD3DF8559CAAD27FB
+1.host.servernet.nz	SSHFP	2 1 D2850D04CCEED6C8D3EF15D5D6BD11DFAC1E3584
+1.host.servernet.nz	SSHFP	3 1 9286D91C9C6351F1234E2041F5B0464CDBA7A3E6
+1.host.servernet.nz	SSHFP	4 1 1A924BFC8870F2688F0AC618EA6B7EF48B0E4488
+1.host.servernet.nz	SSHFP	3 2 EFD5F373C0315CE07D328E63477EBF1048EC5964138E2022E04693DDC9E1BC7E
+1.host.servernet.nz	SSHFP	1 2 EFC9E3ADB4D5E4A14A503190C7F8A01C506D2F0978DA76BEFCD9B434D3D470ED
+1.host.servernet.nz	SSHFP	1 1 8E104E452830760D36A9AAF9B278312A16A3B08B
+_dmarc.servernet.nz	TXT	"v=DMARC1; p=reject; rua=mailto:5f127686deee46f9add3241af386cee7@dmarc-reports.cloudflare.net,mailto:spam@servernet.nz; ruf=mailto:spam@servernet.nz; sp=reject; fo=0:1:d:s; pct=100; ri=86400; adkim=s; aspf=s"
+servernet.nz	TXT	"v=spf1 include:spf.protection.outlook.com include:spf.smtp2go.com -all"
+servernet.nz	TXT	MS=ms31177112
+westsideengineering.co.nz	A	192.0.0.1
+autodiscover.westsideengineering.co.nz	CNAME	autodiscover.outlook.com
+enterpriseenrollment.westsideengineering.co.nz	CNAME	enterpriseenrollment-s.manage.microsoft.com
+enterpriseregistration.westsideengineering.co.nz	CNAME	enterpriseregistration.windows.net
+lyncdiscover.westsideengineering.co.nz	CNAME	webdir.online.lync.com
+selector1._domainkey.westsideengineering.co.nz	CNAME	selector1-westsideengineering-co-nz._domainkey.jamiesservers.onmicrosoft.com
+selector2._domainkey.westsideengineering.co.nz	CNAME	selector2-westsideengineering-co-nz._domainkey.jamiesservers.onmicrosoft.com
+sip.westsideengineering.co.nz	CNAME	sipdir.online.lync.com
+www.westsideengineering.co.nz	CNAME	westsideengineering.co.nz
+westsideengineering.co.nz	MX	westsideengineering-co-nz.mail.protection.outlook.com
+_sipfederationtls._tcp.westsideengineering.co.nz	SRV	1 5061 sipfed.online.lync.com
+_sip._tls.westsideengineering.co.nz	SRV	1 443 sipdir.online.lync.com
+_dmarc.westsideengineering.co.nz	TXT	"v=DMARC1;  p=none; rua=mailto:f6713acc5c784232a6bdfef73e5f2116@dmarc-reports.cloudflare.net"
+westsideengineering.co.nz	TXT	"v=spf1 include:spf.protection.outlook.com -all"

@@ -1,0 +1,46 @@
+api.arcnet.nz	CNAME	host.arcnet.nz
+arcnet.nz	CNAME	1.host.servernet.nz
+auth.arcnet.nz	CNAME	host.arcnet.nz
+autodiscover.arcnet.nz	CNAME	autodiscover.outlook.com
+dash.aa123.arcnet.nz	CNAME	aa123.arcnet.nz
+*.dev.arcnet.nz	CNAME	host.arcnet.nz
+docker.arcnet.nz	CNAME	host.arcnet.nz
+em315318.arcnet.nz	CNAME	return.smtp2go.net
+enterpriseenrollment.arcnet.nz	CNAME	enterpriseenrollment.manage.microsoft.com
+enterpriseregistration.arcnet.nz	CNAME	enterpriseregistration.windows.net
+*.host.arcnet.nz	CNAME	host.arcnet.nz
+host.arcnet.nz	CNAME	1.host.servernet.nz
+hosts.arcnet.nz	CNAME	host2.arcnet.nz
+invoice.arcnet.nz	CNAME	arcnet.nz
+link.arcnet.nz	CNAME	track.smtp2go.net
+lyncdiscover.arcnet.nz	CNAME	webdir.online.lync.com
+npm.host.arcnet.nz	CNAME	host.arcnet.nz
+portainer.host.arcnet.nz	CNAME	host.arcnet.nz
+push.arcnet.nz	CNAME	arcnet.nz
+remotely.arcnet.nz	CNAME	arcnet.nz
+s315318._domainkey.arcnet.nz	CNAME	dkim.smtp2go.net
+sc.arcnet.nz	CNAME	host.arcnet.nz
+selector1._domainkey.arcnet.nz	CNAME	selector1-arcnet-nz._domainkey.jamiesservers.onmicrosoft.com
+selector2._domainkey.arcnet.nz	CNAME	selector2-arcnet-nz._domainkey.jamiesservers.onmicrosoft.com
+sip.arcnet.nz	CNAME	sipdir.online.lync.com
+uptime.arcnet.nz	CNAME	host.arcnet.nz
+wazuh.arcnet.nz	CNAME	host.arcnet.nz
+www.arcnet.nz	CNAME	arcnet.nz
+arcnet.nz	MX	arcnet-nz.mail.protection.outlook.com
+_sipfederationtls._tcp.arcnet.nz	SRV	100 5061 sipfed.online.lync.com
+_sip._tls.arcnet.nz	SRV	100 443 sipdir.online.lync.com
+arcnet.nz	TXT	"v=spf1 a:arcnet.nz include:spf.protection.outlook.com include:spf.smtp2go.com -all"
+_dmarc.arcnet.nz	TXT	"v=DMARC1; p=reject; rua=mailto:fcb78213904544ceabd5456f59630655@dmarc-reports.cloudflare.net,mailto:spam@arcnet.nz; ruf=mailto:spam@arcnet.nz; sp=reject; fo=0:1:d:s; pct=100; ri=86400; adkim=s; aspf=s"
+jamiesservers.com	A	170.64.146.110
+autodiscover.jamiesservers.com	CNAME	autodiscover.outlook.com
+enterpriseenrollment.jamiesservers.com	CNAME	enterpriseenrollment-s.manage.microsoft.com
+enterpriseregistration.jamiesservers.com	CNAME	enterpriseregistration.windows.net
+lyncdiscover.jamiesservers.com	CNAME	webdir.online.lync.com
+selector1._domainkey.jamiesservers.com	CNAME	selector1-jamiesservers-com._domainkey.jamiesservers.onmicrosoft.com
+selector2._domainkey.jamiesservers.com	CNAME	selector2-jamiesservers-com._domainkey.jamiesservers.onmicrosoft.com
+sip.jamiesservers.com	CNAME	sipdir.online.lync.com
+jamiesservers.com	MX	jamiesservers-com.mail.protection.outlook.com
+_sipfederationtls._tcp.jamiesservers.com	SRV	1 5061 sipfed.online.lync.com
+_sip._tls.jamiesservers.com	SRV	1 443 sipdir.online.lync.com
+_dmarc.jamiesservers.com	TXT	v=DMARC1; p=reject; rua=mailto:spam@jamiesservers.com; ruf=mailto:spam@jamiesservers.com; sp=reject; fo=0:1:d:s; pct=100; ri=86400; adkim=s; aspf=s
+jamiesservers.com	TXT	"v=spf1 include:spf.protection.outlook.com -all"
