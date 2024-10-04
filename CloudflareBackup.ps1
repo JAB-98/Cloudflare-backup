@@ -28,6 +28,7 @@ do {
     $i++
 } while ($DomainsTemp.result_info.page -lt $DomainsTemp.result_info.total_pages)
 foreach ($currentItemName in $Domains) {
+    $zone = $null
     $i=1
     do {
         $ZoneTeamp = Invoke-webrequest -Uri "$($baceurl)zones/$($currentItemName.id)/dns_records?page=$($i)" -Method Get -Headers @{"Authorization" = $Authorization } | ConvertFrom-Json
